@@ -7,10 +7,10 @@ const YtTest02 = () => {
   let audio;
 
   useEffect(() => {
-    console.log(ipcRenderer);
-    ipcRenderer.invoke('print-name', "Deep Lalani").then((result) => {
-      console.log('result', result); 
-    })
+    // console.log(ipcRenderer);
+    // ipcRenderer.invoke('print-name', "Deep Lalani").then((result) => {
+    //   console.log('result', result); 
+    // })
     audio = document.getElementById('audio');
     audio.src = 'file:///E:/Project/ElectronJs/electron-react-test-01/src/components/aud01.mp3';
     audio.load();
